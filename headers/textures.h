@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 11:58:14 by gudias            #+#    #+#             */
-/*   Updated: 2022/11/08 20:12:26 by gudias           ###   ########.fr       */
+/*   Updated: 2022/11/14 13:59:40 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,5 +63,19 @@
 # define TX_PISTOL4	"assets/textures/pistol1/04F.xpm"
 # define TX_PISTOL5	"assets/textures/pistol1/05F.xpm"
 # define TX_PISTOL6	"assets/textures/pistol1/06F.xpm"
+
+# define TX_KNIFE_NB	4
+
+# define TX_KNIFE1	"assets/textures/KNIFE1/KNIFE1.xpm"
+# define TX_KNIFE2	"assets/textures/KNIFE1/KNIFE2.xpm"
+# define TX_KNIFE3	"assets/textures/KNIFE1/KNIFE3.xpm"
+# define TX_KNIFE4	"assets/textures/KNIFE1/KNIFE4.xpm"
+
+# define TX_RIFLE_NB	4
+
+# define TX_RIFLE1	"assets/textures/RIFLE1/RIFLE1.xpm"
+# define TX_RIFLE2	"assets/textures/RIFLE1/RIFLE2.xpm"
+# define TX_RIFLE3	"assets/textures/RIFLE1/RIFLE3.xpm"
+# define TX_RIFLE4	"assets/textures/RIFLE1/RIFLE4.xpm"
 
 #endif /* TEXTURES_H */

@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 18:51:07 by gudias            #+#    #+#             */
-/*   Updated: 2022/11/10 18:49:47 by gudias           ###   ########.fr       */
+/*   Updated: 2022/11/14 14:01:08 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,15 @@ enum e_tx {
 	PISTOL3,
 	PISTOL4,
 	PISTOL5,
-	PISTOL6
+	PISTOL6,
+	KNIFE1,
+	KNIFE2,
+	KNIFE3,
+	KNIFE4,
+	RIFLE1,
+	RIFLE2,
+	RIFLE3,
+	RIFLE4
 };
 
 enum e_axis {
@@ -194,7 +202,7 @@ typedef struct s_info {
 	int				mapsize[2];
 	t_player		player;
 	t_inputs		inputs;
-	t_texture		texture[26];
+	t_texture		texture[34];
 	bool			active_map;
 	t_ray			ray[W_WIDTH];
 	t_img_data		screen;

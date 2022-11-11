@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 17:45:50 by gudias            #+#    #+#             */
-/*   Updated: 2022/11/08 14:33:53 by gudias           ###   ########.fr       */
+/*   Updated: 2022/11/11 02:21:09 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,14 @@ static void	destroy_images(t_info *info)
 	my_destroy_image(info->mlx[INIT], info->texture[PISTOL4].img.img);
 	my_destroy_image(info->mlx[INIT], info->texture[PISTOL5].img.img);
 	my_destroy_image(info->mlx[INIT], info->texture[PISTOL6].img.img);
+	my_destroy_image(info->mlx[INIT], info->texture[KNIFE1].img.img);
+	my_destroy_image(info->mlx[INIT], info->texture[KNIFE2].img.img);
+	my_destroy_image(info->mlx[INIT], info->texture[KNIFE3].img.img);
+	my_destroy_image(info->mlx[INIT], info->texture[KNIFE4].img.img);
+	my_destroy_image(info->mlx[INIT], info->texture[RIFLE1].img.img);
+	my_destroy_image(info->mlx[INIT], info->texture[RIFLE2].img.img);
+	my_destroy_image(info->mlx[INIT], info->texture[RIFLE3].img.img);
+	my_destroy_image(info->mlx[INIT], info->texture[RIFLE4].img.img);
 }
 
 static void	free_textures_path(t_info *info)

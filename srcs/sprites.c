@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 13:54:21 by gudias            #+#    #+#             */
-/*   Updated: 2022/11/08 14:35:02 by gudias           ###   ########.fr       */
+/*   Updated: 2022/11/11 02:19:50 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,7 +114,7 @@ void	scale_pov_sprites(t_info *info)
 	t_img_data	new;
 
 	i = -1;
-	while (++i < TX_PISTOL_NB)
+	while (++i < (TX_PISTOL_NB + TX_KNIFE_NB + TX_RIFLE_NB))
 	{
 		new.width = W_WIDTH / 2;
 		scale = (float)new.width / info->texture[PISTOL1 + i].img.width;

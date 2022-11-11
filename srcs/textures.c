@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/01 18:02:07 by gudias            #+#    #+#             */
-/*   Updated: 2022/11/08 20:13:05 by gudias           ###   ########.fr       */
+/*   Updated: 2022/11/14 14:00:02 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,15 @@ static int	load_sprites(t_info *info)
 		|| load_xpm_image(info, &(info->texture[PISTOL3].img), TX_PISTOL3)
 		|| load_xpm_image(info, &(info->texture[PISTOL4].img), TX_PISTOL4)
 		|| load_xpm_image(info, &(info->texture[PISTOL5].img), TX_PISTOL5)
-		|| load_xpm_image(info, &(info->texture[PISTOL6].img), TX_PISTOL6))
+		|| load_xpm_image(info, &(info->texture[PISTOL6].img), TX_PISTOL6)
+		|| load_xpm_image(info, &(info->texture[KNIFE1].img), TX_KNIFE1)
+		|| load_xpm_image(info, &(info->texture[KNIFE1].img), TX_KNIFE2)
+		|| load_xpm_image(info, &(info->texture[KNIFE2].img), TX_KNIFE3)
+		|| load_xpm_image(info, &(info->texture[KNIFE3].img), TX_KNIFE4)
+		|| load_xpm_image(info, &(info->texture[RIFLE4].img), TX_RIFLE1)
+		|| load_xpm_image(info, &(info->texture[RIFLE2].img), TX_RIFLE2)
+		|| load_xpm_image(info, &(info->texture[RIFLE3].img), TX_RIFLE3)
+		|| load_xpm_image(info, &(info->texture[RIFLE4].img), TX_RIFLE4))
 		return (1);
 	scale_pov_sprites(info);
 	return (0);
