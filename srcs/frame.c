@@ -6,7 +6,7 @@
 /*   By: tgrivel <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/01 12:40:59 by tgrivel           #+#    #+#             */
-/*   Updated: 2022/11/08 20:15:10 by gudias           ###   ########.fr       */
+/*   Updated: 2022/11/14 14:04:45 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ void	print_frame(t_info *info)
 		print_minimap(info);
 	print_info(info);
 	mlx_put_image_to_window(info->mlx[0], info->mlx[1],
-		info->texture[PISTOL1 + info->player.attack_frame].img.img,
+		(info->player.pov.img,
 		W_WIDTH / 4, W_HEIGHT - info->texture[PISTOL1
 		+ info->player.attack_frame].img.height);
 }

@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 20:19:07 by gudias            #+#    #+#             */
-/*   Updated: 2022/11/09 18:01:57 by gudias           ###   ########.fr       */
+/*   Updated: 2022/11/14 14:05:20 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ static void	handle_inputs(t_info *info)
 		player_attack(info);
 	if (info->inputs.action)
 		player_action(info);
+	if (info->inputs.num_key)
+		switch_weapon(info, info->inputs.num_key);
 }
 
 // Mouse movement

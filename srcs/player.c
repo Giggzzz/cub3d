@@ -6,7 +6,7 @@
 /*   By: tgrivel <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/29 12:26:36 by tgrivel           #+#    #+#             */
-/*   Updated: 2022/11/11 14:02:07 by gudias           ###   ########.fr       */
+/*   Updated: 2022/11/14 14:04:57 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,4 +80,16 @@ void
 		info->map[(int)mid_ray->enemy_hit[Y]][(int)mid_ray->enemy_hit[X]] = '0';
 		create_minimap(info);
 	}
+}
+
+void
+	switch_weapon(t_info *info, int key)
+{
+	if (key == KEY_1)
+		info->player.pov = &(info->texture[RIFLE1].img);
+	else if (key == KEY_2)
+		info->player.pov = &(info->texture[PISTOL1].img);
+	else if (key == KEY_3)
+		info->player.pov = &(info->texture[KNIFE1].img);
+	info->inputs.num_key = 0;	
 }

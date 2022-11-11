@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 17:44:17 by gudias            #+#    #+#             */
-/*   Updated: 2022/10/21 12:43:54 by gudias           ###   ########.fr       */
+/*   Updated: 2022/11/11 03:54:36 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int	init_game(t_info *info, char *mapname)
 	info->active_map = true;
 	info->player.delta[X] = -1.0f;
 	info->player.delta[Y] = -1.0f;
+	info->player.pov = &(info->texture[PISTOL1].img);
 	init_ray(info);
 	if (load_map(info, mapname))
 		return (1);

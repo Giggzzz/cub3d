@@ -6,7 +6,7 @@
 /*   By: melogr@phy <tgrivel@student.42lausanne.ch  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 22:01:59 by melogr@phy        #+#    #+#             */
-/*   Updated: 2022/11/11 14:10:35 by gudias           ###   ########.fr       */
+/*   Updated: 2022/11/14 14:05:41 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ static int
 		info->inputs.action = 1;
 	else if (key == KEY_TAB)
 		info->active_map = !info->active_map;
+	else if (key == KEY_1 || key == KEY_2 || key == KEY_3)
+		info->inputs.num_key = key;
 	return (0);
 }
 

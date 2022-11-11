@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 18:51:07 by gudias            #+#    #+#             */
-/*   Updated: 2022/11/14 14:01:08 by gudias           ###   ########.fr       */
+/*   Updated: 2022/11/14 14:04:31 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -149,12 +149,14 @@ typedef struct s_inputs {
 	bool	r_right;
 	bool	attack;
 	bool	action;
+	int	num_key;
 }	t_inputs;
 
 typedef struct s_player {
 	float		pos[2];
 	float		angle;
 	float		delta[2];
+	t_img_data	*pov;
 	int			attack_frame;
 }	t_player;
 
@@ -245,6 +247,7 @@ void	player_move(t_info *info, float distance, int side);
 void	player_rotate(t_info *info, float rotation);
 void	player_action(t_info *info);
 void	player_attack(t_info *info);
+void	switch_weapon(t_info *info, int key);
 
 // ray.c
 void	ray(t_info *info, t_ray *ray);

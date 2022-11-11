@@ -6,7 +6,7 @@
 /*   By: melogr@phy <tgrivel@student.42lausanne.ch  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/18 11:21:41 by melogr@phy        #+#    #+#             */
-/*   Updated: 2022/09/24 19:29:10 by gudias           ###   ########.fr       */
+/*   Updated: 2022/11/11 03:29:48 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,9 @@
 #  define KEY_W			119
 #  define KEY_Q			113
 #  define KEY_E			101
+#  define KEY_1			49
+#  define KEY_2			50
+#  define KEY_3			51
 
 #  define KEY_LEFT		65361
 #  define KEY_DOWN		65364
