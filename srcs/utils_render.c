@@ -6,7 +6,7 @@
 /*   By: gudias <marvin@42lausanne.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 18:54:39 by gudias            #+#    #+#             */
-/*   Updated: 2022/11/10 18:09:14 by gudias           ###   ########.fr       */
+/*   Updated: 2022/11/14 14:03:23 by gudias           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,7 @@ void	draw_pov(t_info *info)
 	int			x;
 	int			y;
 
-	tx = &(info->texture[PISTOL1 + info->player.attack_frame].img);
+	tx = &(info->texture[KNIFE1 + info->player.attack_frame].img);
 	src = tx->addr;
 	y = -1;
 	while (++y < tx->height)
